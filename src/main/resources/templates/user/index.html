@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>login UI</title>
+    <link rel="stylesheet" type="text/css" href="https://www.layuicdn.com/layui-v2.5.6/css/layui.css" />
+</head>
+<body>
+<ul class="layui-nav">
+    <li class="layui-nav-item"><a href="/user/index">欢迎你：柒亦</a></li>
+</ul>
+<div style="margin-left: 33%;margin-top: 100px;">
+    <div class="layui-carousel" id="test1" lay-filter="test1">
+        <div carousel-item="">
+            <div style="background-color: #009688">这里是轮播1</div>
+            <div style="background-color: #009688">这里是轮播2</div>
+            <div style="background-color: #009688">这里是轮播3</div>
+            <div style="background-color: #009688">这里是轮播4</div>
+            <div style="background-color: #009688">这里是轮播5</div>
+        </div>
+    </div>
+</div>
+
+<div style="text-align: center">
+    <div class="layui-container" style="margin-top: 20px">
+        <a href="http://www.layui.com/doc/element/button.html" class="layui-btn layui-btn-normal" target="_blank">去饮食</a>
+        <a href="http://www.layui.com/doc/element/button.html" class="layui-btn layui-btn-normal" target="_blank">去运动</a>
+        <a href="/user/recommend" class="layui-btn layui-btn-normal" target="_blank">个人推荐</a>
+        <a href="http://www.layui.com/doc/element/button.html" class="layui-btn layui-btn-normal" target="_blank">全部文章</a>
+    </div>
+</div>
+
+
+
+</body>
+</html>
+
+<script src="https://www.layuicdn.com/layui-v2.5.6/layui.js"></script>
+<script type="application/javascript">
+
+    layui.use(['carousel', 'form'], function() {
+        var carousel = layui.carousel
+            , form = layui.form;
+
+        //图片轮播
+        carousel.render({
+            elem: '#test1'
+            ,width: '600px'
+            ,height: '240px'
+            ,interval: 5000
+        });
+
+    })
+
+</script>
+
+<style type="text/css">
+    .layui-nav-item123{
+        position:relative;
+        margin-right: 50px;
+        display:inline-block;
+        *display:inline;*zoom:1;
+        vertical-align:middle;
+        line-height:60px
+    }
+    body{
+        margin:0;
+        padding: 0;
+        font-family: sans-serif;
+        background: url("https://img-blog.csdnimg.cn/20191220175048131.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDE5NjY1MQ==,size_16,color_FFFFFF,t_70");
+        background-size: cover;
+    }
+
+</style>

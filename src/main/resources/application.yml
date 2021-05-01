@@ -1,0 +1,21 @@
+spring:
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    mode: HTML
+    encoding: UTF-8
+    #     新版本不支持content-type: text/html，故新写法
+    servlet:
+      content-type: text/html
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://121.43.183.50:3306/manager_system?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: system_root
+    password: 123456
+
+# mybatis plus 配置
+mybatis-plus:
+  type-aliases-package: com.tech.health.entity
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

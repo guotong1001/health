@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>login UI</title>
+    <link rel="stylesheet" type="text/css" href="https://www.layuicdn.com/layui-v2.5.6/css/layui.css" />
+</head>
+<body>
+<ul class="layui-nav">
+    <li class="layui-nav-item"><a href="/user/index">欢迎你：柒亦</a></li>
+</ul>
+
+
+<div>
+
+
+</div>
+<div style="text-align: center;border-color: #00F7DE">
+    <div class="layui-container" style="margin-top: 20px;color: white">
+        <p>
+            <span style="font-size: 24px;">您的个人目标是：<strong>增重</strong></span>
+        </p>
+        <p>
+            <span style="font-size: 24px;">推荐给您的食谱是:<strong><span style="font-size: 20px; text-decoration: underline;"> 黄瓜，香蕉</span></strong>，每日摄入热量是:<strong><span style="font-size: 20px; text-decoration-line: underline;">100</span></strong><span style="font-size: 20px; text-decoration-line: underline;">&nbsp;</span>热量。</span>
+        </p>
+        <p>
+            <span style="font-size: 24px;">推荐给您的运动是:<span style="font-size: 20px; text-decoration-line: underline;">&nbsp;<strong>跑步，游泳</strong></span>，每日消耗大卡是:<strong><span style="font-size: 20px; text-decoration: underline;">854</span></strong><span style="font-size: 20px; text-decoration: underline;">&nbsp;</span>卡路里。</span>
+        </p>
+        <p>
+            <span style="font-size: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20天后达成目标。</span>
+        </p>
+        <p>
+            <br/>
+        </p>
+    </div>
+</div>
+
+
+
+</body>
+</html>
+
+<script src="https://www.layuicdn.com/layui-v2.5.6/layui.js"></script>
+<script type="application/javascript">
+
+    layui.use(['carousel', 'form'], function() {
+        var carousel = layui.carousel
+            , form = layui.form;
+
+        //图片轮播
+        carousel.render({
+            elem: '#test1'
+            ,width: '600px'
+            ,height: '240px'
+            ,interval: 5000
+        });
+
+    })
+
+</script>
+
+<style type="text/css">
+    .layui-nav-item123{
+        position:relative;
+        margin-right: 50px;
+        display:inline-block;
+        *display:inline;*zoom:1;
+        vertical-align:middle;
+        line-height:60px
+    }
+    body{
+        margin:0;
+        padding: 0;
+        font-family: sans-serif;
+        background: url("https://img-blog.csdnimg.cn/20191220175048131.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDE5NjY1MQ==,size_16,color_FFFFFF,t_70");
+        background-size: cover;
+    }
+
+</style>
